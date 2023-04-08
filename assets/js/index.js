@@ -31,19 +31,18 @@ function iniciar (){
 function listarComentarios(){
     var comentariosAlmacenados = JSON.parse(localStorage.getItem('comentarios'));
 
-    console.log(comentariosAlmacenados);
+    if (!comentariosAlmacenados) {
+      comentariosAlmacenados=[];  
+      
+    } 
+    //console.log(comentariosAlmacenados);
     var divContenedor= document.getElementById('divContenedor');
 
         divContenedor.style.maxHeight ='400px'; /* establece el ancho máximo del div */
         divContenedor.style.overflow='auto'; /* agrega barras de desplazamiento si es necesario */
         divContenedor.style.overflowY ='autox';       /* agrega barras de desplazamiento solo verticalmente si es necesario */  
             
-              
-              
-              
-    
-
-    
+      
      comentariosAlmacenados.forEach(element => {
         var nodoHjo= document.createElement('p');
          var html = `
