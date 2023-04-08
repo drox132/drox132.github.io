@@ -3,7 +3,7 @@ function iniciar(){
 
     function buscarinformacion(){
 
-    fetch('https://github.com/drox132?tab=repositories')
+    fetch('https://github.com/drox132?tab=repositories',{mode: 'no-cors'})
         .then(respuesta =>{
             return respuesta.text();
         })
