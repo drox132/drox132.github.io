@@ -10,6 +10,8 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+<!-- 		<script src="https://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
+ -->
 	</head>
 	<body class="is-preload">
 
@@ -17,9 +19,9 @@
 			<header id="header">
 				<div class="inner">
 					<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
-					<h1><strong>Mi nombre es Francisco</strong>, y esta <br />
+					<h1><strong>Francisco Burgos</strong>,  esta <br />
 						es una pagina responsiva <br />
-						creada en  <a href="https://buenosaires.gob.ar/educacion/codo-codo-40" target="_blank">Codo a Codo WEB</a>.</h1>
+						creada en  <a href="https://buenosaires.gob.ar/educacion/codo-codo-40" target="_blank">Codo a Codo Desarrollo WEB</a>.</h1>
 				</div>
 			</header>
 
@@ -35,7 +37,7 @@
 						<p>¡Hola! Quiero contarte que me encanta el mundo de la tecnología. Desde hace un año he estado dedicando mi tiempo 
 						y energía para adquirir habilidades y conocimientos en este campo y me siento realmente emocionado por lo que el futuro me depara.</p>
 						<ul class="actions">
-							<li><a href="assets/templates/presentacion.html"  target="_blank" class="button">Leer Mas</a></li>
+							<li><a href="assets/templates/presentacion.html"  class="button">Leer Mas</a></li>
 						</ul>
 					</section>
 
@@ -47,76 +49,77 @@
 						
 						<div class="row">
 							<article class="col-6 col-12-xsmall work-item">
-								<a href="assets/templates/proyectos-react.html" target="_blank" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /></a>
+								<a href="assets/templates/proyectos-react.html"  class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /></a>
 								<h3 style="text-align: center;">Listado de proyectos realizados con REACT</h3>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
-								<a href="assets/templates/proyectos-jquery.html" target="_blank" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="" /></a>
+								<a href="assets/templates/proyectos-jquery.html"  class="image fit thumb"><img src="images/thumbs/02.jpg" alt="" /></a>
 								<h3>Proyectos con JQuery (libreria de JScript)</h3>
 								
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
-								<a href="assets/templates/proyecto-java-spring.html" target="_blank" class="image fit thumb"><img src="images/thumbs/03.jpg" alt="" /></a>
+								<a href="assets/templates/proyecto-java-spring.html"  class="image fit thumb"><img src="images/thumbs/03.jpg" alt="" /></a>
 								<h3>Proyecto JAVA con Spring Boot</h3>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
-								<a href="assets/templates/proyecto-sqlserver-ssis.html" target="_blank" class="image fit thumb"><img src="images/thumbs/04.jpg" alt="" /></a>
+								<a href="assets/templates/proyecto-sqlserver-ssis.html"  class="image fit thumb"><img src="images/thumbs/04.jpg" alt="" /></a>
 								<h3>Proyectos con SQL Server y SSIS</h3>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="#" class="image fit thumb"><img src="images/thumbs/05.jpg" alt="" /></a>
-								<h3>Comandos Usados en GIT y repositorio de Github</h3>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="#" class="image fit thumb"><img src="images/thumbs/06.jpg" alt="" /></a>
-								<h3>Habilidades Blandas</h3>
 							</article>
 						</div>
 						<ul class="actions">
-							<li><a href="#" class="button">Full Portfolio</a></li>
+							<li><a href="assets/templates/total-proyectos.html" class="button">Todos los Proyectos</a></li>
 						</ul>
 					</section>
 
 				<!-- Three -->
 					<section id="three">
-						<h2>Get In Touch</h2>
-						<p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p>
+						<h2>Ponerte en Contacto</h2>
+						<p>¡Hola!, si viste algo interesante que te llamo la atencion y estas interesado(a) en contactarme puedes llenar el siguiente formulario. Y pronto te estare contactando, Nos vemos...</p>
 						<div class="row">
 							<div class="col-8 col-12-small">
-								<form method="post" action="#">
+								<form method="post" action="#" id="form">
 									<div class="row gtr-uniform gtr-50">
-										<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
-										<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
-										<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+										<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Nombre" /><span id="spanName"></span></div>
+										<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /> <span id="spanEmail"></span></div>
+										<div class="col-12"><textarea name="message" id="message" placeholder="Mensaje" rows="4"></textarea><span id="spanMessage"></span></div>
 									</div>
+									<br>
+									<ul class="actions">
+										<li><input type="submit" value="Enviar Mensaje"  id="btnEnviar"/></li>
+									</ul>
 								</form>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
+								
 							</div>
 							<div class="col-4 col-12-small">
 								<ul class="labeled-icons">
 									<li>
-										<h3 class="icon solid fa-home"><span class="label">Address</span></h3>
-										1234 Somewhere Rd.<br />
-										Nashville, TN 00000<br />
-										United States
+										<h3 class="icon solid fa-home"><span class="label">Direccion</span></h3>
+										Maza 146<br />
+										Capital Federal<br />
+										Argentina
 									</li>
 									<li>
 										<h3 class="icon solid fa-mobile-alt"><span class="label">Phone</span></h3>
-										000-000-0000
+										<a href="https://wa.me/541144397533">Contactame por WhatsApp</a> 
 									</li>
 									<li>
 										<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
-										<a href="#">hello@untitled.tld</a>
+										<a href="mailto:2013fjbh@gmail.com" target="_blank">2013fjbh@gmail.com</a>
 									</li>
 								</ul>
 							</div>
 						</div>
 					</section>
 
-			
-
+				<!-- Four -->
+				<section id="three">
+					<h2>Comentarios</h2>
+					<div class="row">
+						<div class="col-12 col-12-small" id="divContenedor">
+							
+						</div>																		
+					</div>
+				</section>
 			</div>
 
 		<!-- Footer -->
@@ -135,6 +138,9 @@
 			</footer>
 
 		<!-- Scripts -->
+		<script src="assets/js/index.js">
+
+		</script>
 <!-- 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.poptrox.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
